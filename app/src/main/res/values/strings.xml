@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">Simple Layout</string>
+    <string name="app_name">Voorbeeld Applicatie</string>
+
+    <string name="title_activity_main">RecyclerViewActivity</string>
+
+
+    <string name="action_goto_activity_list"> Open RecyclerViewActivity</string>
+    <string name="title_activity_recycler_view">RecyclerViewActivity</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
