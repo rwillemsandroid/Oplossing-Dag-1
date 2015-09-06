@@ -77,10 +77,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.action_goto_activity_list:
                 gotoRecyclerViewActivity();
                 return true;
+            case R.id.action_goto_activity_retrofit:
+                gotoRetrofitActivity();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
+
 
     /***
      * Deze functie zorgt ervoor dat het menu in de Actionbar wordt toegevoegd
@@ -97,6 +102,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void gotoRecyclerViewActivity(){
         Intent myIntent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+        MainActivity.this.startActivity(myIntent);
+    }
+
+    private void gotoRetrofitActivity() {
+        Intent myIntent = new Intent(MainActivity.this, RetrofitActivity.class);
         MainActivity.this.startActivity(myIntent);
     }
 

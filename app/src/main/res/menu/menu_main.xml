@@ -8,4 +8,10 @@
         android:title="@string/action_goto_activity_list"
         android:orderInCategory="100"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_goto_activity_retrofit"
+        android:title="@string/action_goto_activity_retrofit"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
 </menu>

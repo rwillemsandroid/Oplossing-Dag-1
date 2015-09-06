@@ -20,8 +20,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:parentActivityName=".activities.MainActivity"
             android:name=".activities.RecyclerViewActivity"
             android:label="@string/title_activity_recycler_view" >
+        </activity>
+        <activity
+            android:parentActivityName=".activities.MainActivity"
+            android:name=".activities.RetrofitActivity"
+            android:label="@string/title_activity_retrofit" >
         </activity>
     </application>
 
