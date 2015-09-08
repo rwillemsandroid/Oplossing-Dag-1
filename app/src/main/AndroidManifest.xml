@@ -3,6 +3,7 @@
     package="be.vdab.simplelayout" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".VDABApplication"
@@ -20,14 +21,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:parentActivityName=".activities.MainActivity"
             android:name=".activities.RecyclerViewActivity"
-            android:label="@string/title_activity_recycler_view" >
+            android:label="@string/title_activity_recycler_view"
+            android:parentActivityName=".activities.MainActivity" >
         </activity>
         <activity
-            android:parentActivityName=".activities.MainActivity"
             android:name=".activities.RetrofitActivity"
-            android:label="@string/title_activity_retrofit" >
+            android:label="@string/title_activity_retrofit"
+            android:parentActivityName=".activities.MainActivity" >
+        </activity>
+        <activity
+            android:name=".activities.StorageActivity"
+            android:label="@string/title_activity_storage"
+            android:windowSoftInputMode="adjustNothing"
+            android:parentActivityName=".activities.MainActivity">
         </activity>
     </application>
 

@@ -14,4 +14,10 @@
         android:title="@string/action_goto_activity_retrofit"
         android:orderInCategory="100"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_goto_activity_storage"
+        android:title="@string/action_goto_activity_storage"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
 </menu>

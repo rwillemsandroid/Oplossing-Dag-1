@@ -10,6 +10,11 @@
     <string name="title_activity_retrofit">RetrofitActivity</string>
     <string name="action_goto_activity_retrofit"> Open RetrofitActivity</string>
 
+    <string name="title_activity_storage">StorageActivity</string>
+    <string name="action_goto_activity_storage"> Open StorageActivity</string>
+
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+
 </resources>

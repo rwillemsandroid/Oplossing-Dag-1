@@ -53,6 +53,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
     private void setupToolbar(){
         mToolbar.setTitle(getResources().getString(R.string.title_activity_recycler_view));
         setSupportActionBar(mToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
     }

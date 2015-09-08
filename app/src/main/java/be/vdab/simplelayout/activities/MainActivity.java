@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void setupToolbar(){
         if (mToolbar != null) {
-            mToolbar.setTitle(getResources().getString(R.string.title_activity_main));
+            mToolbar.setTitle(getResources().getString(R.string.app_name));
             setSupportActionBar(mToolbar);
         }
     }
@@ -80,11 +80,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.action_goto_activity_retrofit:
                 gotoRetrofitActivity();
                 return true;
+            case R.id.action_goto_activity_storage:
+                gotoStorageActivity();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
-
 
 
     /***
@@ -99,7 +101,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return super.onCreateOptionsMenu(menu);
     }
 
-
     private void gotoRecyclerViewActivity(){
         Intent myIntent = new Intent(MainActivity.this, RecyclerViewActivity.class);
         MainActivity.this.startActivity(myIntent);
@@ -107,6 +108,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void gotoRetrofitActivity() {
         Intent myIntent = new Intent(MainActivity.this, RetrofitActivity.class);
+        MainActivity.this.startActivity(myIntent);
+    }
+
+    private void gotoStorageActivity() {
+        Intent myIntent = new Intent(MainActivity.this, StorageActivity.class);
         MainActivity.this.startActivity(myIntent);
     }
 
