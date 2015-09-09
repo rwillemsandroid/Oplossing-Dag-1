@@ -17,8 +17,11 @@ import org.w3c.dom.Text;
 
 import java.io.File;
 import java.sql.Timestamp;
+import java.util.List;
 
 import be.vdab.simplelayout.R;
+import be.vdab.simplelayout.database.MySQLiteHelper;
+import be.vdab.simplelayout.models.database.Book;
 import be.vdab.simplelayout.utils.PreferencesHelper;
 import timber.log.Timber;
 
@@ -40,7 +43,10 @@ public class StorageActivity extends AppCompatActivity {
         setupUI();
         setupToolbar();
         setFileList();
+
     }
+
+
 
     public void onClickClear(View v){
         PreferencesHelper.clearNamePreference(this);
@@ -119,6 +125,7 @@ public class StorageActivity extends AppCompatActivity {
         mFileSystemTv.setText("");
         String path = Environment.getExternalStorageDirectory().toString()+"/VDAB";
         File f = new File(path);
+        f.mkdirs();
         File file[] = f.listFiles();
         for (int i=0; i < file.length; i++)
         {

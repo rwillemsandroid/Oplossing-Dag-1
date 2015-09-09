@@ -83,6 +83,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.action_goto_activity_storage:
                 gotoStorageActivity();
                 return true;
+            case R.id.action_goto_activity_db:
+                gotoDBActivity();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -113,6 +116,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void gotoStorageActivity() {
         Intent myIntent = new Intent(MainActivity.this, StorageActivity.class);
+        MainActivity.this.startActivity(myIntent);
+    }
+
+    private void gotoDBActivity() {
+        Intent myIntent = new Intent(MainActivity.this, DatabaseActivity.class);
         MainActivity.this.startActivity(myIntent);
     }
 

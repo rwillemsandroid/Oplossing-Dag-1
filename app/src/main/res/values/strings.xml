@@ -13,6 +13,9 @@
     <string name="title_activity_storage">StorageActivity</string>
     <string name="action_goto_activity_storage"> Open StorageActivity</string>
 
+    <string name="title_activity_database">DatabaseActivity</string>
+    <string name="action_goto_activity_db"> Open DataBaseActivity</string>
+
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 

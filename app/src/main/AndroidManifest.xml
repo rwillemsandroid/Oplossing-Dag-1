@@ -33,7 +33,12 @@
         <activity
             android:name=".activities.StorageActivity"
             android:label="@string/title_activity_storage"
-            android:windowSoftInputMode="adjustNothing"
+            android:parentActivityName=".activities.MainActivity"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name=".activities.DatabaseActivity"
+            android:label="@string/title_activity_database"
             android:parentActivityName=".activities.MainActivity">
         </activity>
     </application>
