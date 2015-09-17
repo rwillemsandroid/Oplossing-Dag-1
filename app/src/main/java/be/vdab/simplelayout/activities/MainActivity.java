@@ -1,7 +1,9 @@
 package be.vdab.simplelayout.activities;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -11,6 +13,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.parse.ParseObject;
+
+import org.apache.commons.lang3.StringUtils;
 
 import be.vdab.simplelayout.R;
 import timber.log.Timber;
@@ -35,6 +42,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setupUI();
         setupToolbar();
         setupOnClickListeners();
+
+
+        StringUtils.isNotEmpty(new String());
+
+        ParseObject testObject = new ParseObject("TestObject");
+        testObject.put("hello", "world");
+        testObject.saveInBackground();
 
     }
 
@@ -86,6 +100,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.action_goto_activity_db:
                 gotoDBActivity();
                 return true;
+            case R.id.action_goto_activity_fragment:
+                gotoFragmentActivity();
+                return true;
+            case R.id.action_goto_activity_nav:
+                gotoNavActivity();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -121,6 +141,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void gotoDBActivity() {
         Intent myIntent = new Intent(MainActivity.this, DatabaseActivity.class);
+        MainActivity.this.startActivity(myIntent);
+    }
+
+    private void gotoFragmentActivity() {
+        Intent myIntent = new Intent(MainActivity.this, FragmentActivity.class);
+        MainActivity.this.startActivity(myIntent);
+    }
+
+    private void gotoNavActivity() {
+        Intent myIntent = new Intent(MainActivity.this, NavDrawerActivity.class);
         MainActivity.this.startActivity(myIntent);
     }
 

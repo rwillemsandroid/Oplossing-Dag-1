@@ -19,5 +19,19 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string name="title_activity_fragment">FragmentActivity</string>
+    <string name="action_goto_activity_fragment"> Open FragmentActivity</string>
+
+    <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+    <string name="action_goto_activity_nav">Open NavDrawerActivity</string>
+
+    <string name="hello_fragment1">Hello, I am the first fragment</string>
+    <string name="hello_fragment2">Hello, I am the second fragment</string>
+    <string name="hello_fragment3">Hello, I am the third fragment</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 
 </resources>

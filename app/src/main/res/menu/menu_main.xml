@@ -26,4 +26,18 @@
         android:title="@string/action_goto_activity_db"
         android:orderInCategory="100"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_goto_activity_fragment"
+        android:title="@string/action_goto_activity_fragment"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_goto_activity_nav"
+        android:title="@string/action_goto_activity_nav"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
 </menu>
